@@ -7,6 +7,11 @@
 
         $('#js-preloader').addClass('loaded');
 
+		AOS.init({
+	        easing: 'ease-out',
+			duration: 800,
+			once: true
+		});
     });
 
 

@@ -75,7 +75,9 @@ header, nav, section, article, aside, footer, hgroup {
 * {
   box-sizing: border-box;
 }
-
+html{
+  overflow-x: hidden;
+}
 html, body {
   font-family: 'Poppins', sans-serif;
   -ms-text-size-adjust: 100%;
@@ -323,7 +325,7 @@ Header Style
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: inline-block;
-  width: 90px;
+  width: 120px;
 }
 
 .header-area .main-nav .logo h1 {
@@ -1909,5 +1911,22 @@ body {
   }
   .fun-facts:before {
     width: 95%;
+  }
+  
+}
+@media (min-width: 767.6px) and (max-width: 1199px)  {
+  .header-area .main-nav .logo{
+    width: 90px;
+  }
+  .header-area{
+    top: 7px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  footer p{
+    padding: 10px;
+    line-height: 1.5;
+    padding-top: 4rem;
   }
 }
